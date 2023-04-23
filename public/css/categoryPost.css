@@ -1,0 +1,47 @@
+.all-posts {
+    box-sizing: border-box;
+    padding: 15px;
+    margin: 20px 0;
+    border-radius: var(--borderRadius);
+    width: 100%;
+    background-color: white;
+    box-shadow: var(--boxShadow);
+}
+
+.all-posts h2 {
+    margin: 20px 0;
+    font-size: var(--standard);
+    position: relative;
+}
+
+.all-posts .parent-grid {
+    gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: 1fr ;
+}
+
+.all-posts .parent-grid .card-post {
+    color: black;
+    width: 100%;
+    overflow: hidden;
+    background-color: white;
+    box-shadow: var(--boxShadow);
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.all-posts .parent-grid .card-post img {
+    width: 100%;
+    height: 150px;
+    object-fit: contain;
+    background-color: var(--navColor);
+    border-radius: 5px;
+}
+
+.all-posts .parent-grid .card-post h3 {
+    text-overflow: ellipsis;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+}

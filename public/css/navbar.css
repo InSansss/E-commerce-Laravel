@@ -1,0 +1,134 @@
+*,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: rubik;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+body {
+    background-color: #f5f5f5;
+    --borderRadius:15px;
+    --boxShadow: 0 3px 5px rgba(0,0,0,0.3);
+    --paddingButton:10px 15px;
+    --yellow:#609966;
+    --middle: 20px;
+    --standard: 35px;
+    --little: 18px;
+    --navColor: #2c3e50;
+
+}
+
+@font-face {
+    font-family: rubik;
+    src: url(../font/Rubik-Regular.ttf);
+}
+@font-face {
+    font-family: cool;
+    src: url(../font/coolvetica\ rg.otf);
+}
+
+a {
+    text-decoration: none;
+}
+
+nav {
+    background-color: var(--navColor);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .brand h2 {
+    font-family: cool;
+    color: white;
+    font-size: var(--standard);
+    padding: 10px 20px;
+}
+
+nav .brand h2 a {
+    color: white;
+    text-decoration: none;
+}
+
+nav .menu {
+    padding: 0 20px;
+    color: white;
+}
+
+nav .menu span a {
+    font-family: rubik;
+    padding: var(--paddingButton);
+    margin: 0 10px;
+    font-size: var(--little);
+    color: white;
+    border-radius: var(--borderRadius);
+}
+
+nav .menu span .regist {
+    background-color: var(--yellow);
+}
+
+nav .menu span .login {
+    background-color: red ;
+}
+
+nav .menu .account {
+    position: relative;
+}
+
+nav .menu .account .switch {
+    cursor: pointer;
+    user-select: none;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+nav .menu .account .menu-account {
+    position: absolute;
+    display: flex;
+    right: -10px;
+    background-color: white;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 200px;
+    height: 100px;
+    box-shadow: var(--boxShadow);
+    text-align: center;
+    bottom: -130px;
+    border: 25px;
+}
+
+nav .menu .account .menu-account a {
+    color: black;
+    user-select: none;
+    font-size: var(--little);
+}
+
+nav .menu .account .menu-account button {
+    background-color: transparent;
+    cursor: pointer;
+    font-size: var(--little);
+    border: none;
+    outline: none;
+}
+
+nav .menu .account .hide {
+    bottom: -100px;
+    display: none;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+}

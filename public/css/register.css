@@ -1,0 +1,45 @@
+.container{
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.register-wrap {
+    box-shadow: var(--boxShadow);
+    padding: 15px;
+    width: 350px;
+    border-radius: var(--borderRadius);
+}
+
+.register-wrap h1 {
+    text-align: center;
+    font-weight: 100;
+    position: relative;
+    padding: 10px;
+}
+
+.register-wrap form {
+    margin: 20px auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.register-wrap form input{
+    margin: 10px 0;
+    height: 30px;
+    outline: var(--navColor);
+    padding: 5px;
+}
+
+.register-wrap form button {
+    background-color: var(--navColor);
+    width: 100%;
+    margin: 10px 0;
+    height: 50px;
+    font-size: var(--middle);
+    border: none;
+    color: white;
+    outline: none;
+}

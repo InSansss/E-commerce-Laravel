@@ -1,0 +1,53 @@
+.wrapper-form {
+    width: 100%;
+    background-color: white;
+    border-radius: var(--borderRadius);
+    box-shadow: var(--boxShadow);
+    margin:20px 0;
+    padding: 10px;
+}
+
+.wrapper-form .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wrapper-form .header .back-to-post a {
+    padding: var(--paddingButton);
+    background-color: var(--yellow);
+    color: white;
+    border-radius: var(--borderRadius);
+}
+
+.wrapper-form form {
+    width: 90%;
+    margin: 20px auto;
+}
+
+.wrapper-form form label,
+.wrapper-form form button {
+    display: block;
+    margin: 10px 0;
+}
+
+.wrapper-form form input {
+    width: 40%;
+    padding: 10px;
+}
+
+.wrapper-form form textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.wrapper-form form button {
+    background-color: var(--navColor);
+    width: 100%;
+    margin: 10px 0;
+    height: 50px;
+    font-size: var(--middle);
+    border: none;
+    color: white;
+    outline: none;
+}

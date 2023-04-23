@@ -1,0 +1,99 @@
+.user-login {
+    width: 100%;
+    margin: 20px 0;
+    padding: 10px;
+    background-color: white;
+    border-radius: var(--borderRadius);
+    box-shadow:var(--boxShadow);
+}
+
+.manage-post {
+    width: 100%;
+    background-color: white;
+    border-radius: var(--borderRadius);
+    box-shadow: var(--boxShadow);
+    margin:20px 0;
+    padding: 10px;
+}
+
+.manage-post .header {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    align-items: center;
+}
+
+.manage-post .header .make-post a {
+    padding: var(--paddingButton);
+    background-color: var(--yellow);
+    color: white;
+    border-radius: var(--borderRadius);
+}
+
+.manage-post .post {
+    margin: 50px auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    gap: 10px;
+    grid-template-rows: 1fr;
+}
+
+.manage-post .post .card-post{
+    width: 100%;
+    overflow: hidden;
+    background-color: white;
+    box-shadow: var(--boxShadow);
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.manage-post .post .card-post img {
+    width: 100%;
+    height: 150px;
+    object-fit: contain;
+    background-color: var(--navColor);
+    border-radius: 5px;
+}
+
+.manage-post .post .card-post h2 {
+    text-overflow: ellipsis;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.manage-post .post .card-post .action {
+    width: 100%;
+    justify-content: end;
+    margin: 10px 0;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.manage-post .post .card-post .action .icon {
+    padding: 5px;
+}
+
+.manage-post .post .card-post .action .fa-eye {
+    background-color: yellow;
+    border-radius: 5px;
+}
+
+.manage-post .post .card-post .action .fa-pen {
+    background-color: blueviolet;
+    border-radius: 5px;
+}
+
+.manage-post .post .card-post .action .fa-trash {
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+}
+
+.manage-post .post .card-post .action form button {
+    font-size: var(--little);
+    border: none;
+    outline: none;
+}
